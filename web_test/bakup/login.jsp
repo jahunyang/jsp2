@@ -19,7 +19,6 @@ if(login.equals("false")){
 <form action="login_ok.jsp" >
 아이디 : <input type="text" name="id1" id="id"><br>
 비밀번호 : <input type="password" name="pwd1" id="pwd"><br>
-비밀번호 : <input type="password" name="pwd1" id="pwd"><br>1111
 <input type="submit" value="로그인">
 </form>
 <%

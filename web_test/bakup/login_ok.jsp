@@ -19,7 +19,7 @@ String id = request.getParameter("id1");
 String pwd = request.getParameter("pwd1");
 String dbUrl = "jdbc:mysql://localhost:3306/jsp_study";
 String dbId = "root";
-String dbPwd = "wkgns1324";
+String dbPwd = "r1r2r3";
 Connection con;
 PreparedStatement ps;
 String result=id + "는 없는 아이디 입니다.";
@@ -28,8 +28,7 @@ try {
 	Class.forName("org.mariadb.jdbc.Driver");
 	con = DriverManager.getConnection(dbUrl,dbId,dbPwd);
 	System.out.println("연결 성공");
-	String sql = "select * from user";
-	sql += " where id=?";
+	String sql = "select * from user where id=?";
 	ps = con.prepareStatement(sql);
 	ps.setString(1 , id);
 	ResultSet rs = ps.executeQuery();
@@ -48,7 +47,6 @@ try {
 	e.printStackTrace();
 }
 
-out.print(result);
 boolean login = false;
 %>
 <script>
