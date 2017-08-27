@@ -19,7 +19,7 @@ String id = request.getParameter("id1");
 String pwd = request.getParameter("pwd1");
 String dbUrl = "jdbc:mysql://localhost:3306/jsp_study";
 String dbId = "root";
-String dbPwd = "wkgns1324";
+String dbPwd = "r1r2r3";
 Connection con;
 PreparedStatement ps;
 String result=id + "는 없는 아이디 입니다.";
